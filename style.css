@@ -32,16 +32,19 @@ h2 {
   width: 60px;
   height: 60px;
   border: transparent;
+  outline: transparent;
   border-radius: 100px;
   background-color: rgb(227, 195, 244);
   color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: 20px;
+  user-select: none;
 }
 
 input {
   text-align: right;
   border: none;
+  float: right;
 }
 
 input:focus {
