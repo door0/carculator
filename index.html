@@ -10,33 +10,33 @@
 <body>
   <div class="container">
       <h2>Muey's Carculator</h2>
-        <div class="process">입력값</div>
-        <div class="result">결과값</div>
+        <input type="text" class="process" id="process"></input>
+        <input type="text" class="result" id="result"></input>
       <div class="calc">        
         <br>
-        <button class="reset">C</button>
-        <button class="clear">←</button>
-        <button class="plus">＋</button> 
+        <button class="reset" onclick="reset()">C</button>
+        <button class="clear" onclick="back()">←</button>
+        <button onclick="add('/')">/</button>
         <br>
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="minus">－</button>    
+        <button onclick="add(7)">7</button>
+        <button onclick="add(8)">8</button>
+        <button onclick="add(9)">9</button>
+        <button onclick="add('*')">＊</button>
         <br>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="multiply">×</button>
+        <button onclick="add(4)">4</button>
+        <button onclick="add(5)">5</button>
+        <button onclick="add(6)">6</button>
+        <button onclick="add('-')">-</button>    
         <br>
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="divide">÷</button>
+        <button onclick="add(1)">1</button>
+        <button onclick="add(2)">2</button>
+        <button onclick="add(3)">3</button>
+        <button onclick="add('＋')">＋</button> 
         <br>
         <button class="negative">+/-</button>
-        <button class="number">0</button>
-        <button class="point">.</button>
-        <button class="equal">＝</button>
+        <button onclick="add(0)">0</button>
+        <button class="point" onclick="add('.')">.</button>
+        <button class="equal" onclick="calculate()">＝</button>
       </div>
   </div>
 </body>
